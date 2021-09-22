@@ -1,0 +1,585 @@
+html,body{
+	font-size: 11px;
+	font-family: tahoma;
+	height:100%;
+	margin:0px;
+	padding: 0px;
+	background: none;
+}
+hr {
+	color: #999;
+	border: 0px none;
+	border-top: dashed 1px #999;
+	height: 1px;
+}
+
+input,
+select,
+textarea {
+	outline:none;
+}
+
+form {
+	margin:0px;
+	padding: 0px;
+}
+
+table, img {
+	border:0px;
+}
+
+table td{
+	padding:0px;
+	font-size: 11px;
+	font-family: tahoma;
+}
+
+a:active,
+a:visited,
+a:link {
+	color: #4b719e;
+	text-decoration:none;
+	}
+
+a:hover {
+	color: #4b719e;
+	text-decoration: underline;
+	}
+
+.navigation {
+	color: #999898;
+	font-size: 11px;
+	font-family: tahoma;
+}
+.edit {
+	border:1px solid #9E9E9E;
+	color: #000000;
+	font-size: 11px;
+	font-family: Tahoma; BACKGROUND-COLOR: #ffffff 
+}
+.buttons {
+	background: #FFF;
+	border: 1px solid #9E9E9E;
+	color: #666666;
+	font-family: Tahoma;
+	padding: 0px;
+	vertical-align: absmiddle;
+	font-size: 11px; 
+	height: 21px;
+}
+select {
+	color: #000000;
+	font-size: 11px;
+	font-family: Tahoma; 
+	border:1px solid #9E9E9E;
+}
+
+textarea {
+	border: #9E9E9E 1px solid;
+	color: #000000;
+	font-size: 11px;
+	font-family: Tahoma; 
+	background-color: #ffffff 
+}
+
+#hintbox{ /*CSS for pop up hint box */
+	position:absolute;
+	top: 0;
+	background-color: lightyellow;
+	width: 150px; /*Default width of hint.*/ 
+	padding: 3px;
+	border:1px solid #787878;
+	font:normal 11px Tahoma;
+	line-height:18px;
+	z-index:100;
+	border-right: 2px solid #787878;
+	border-bottom: 2px solid #787878;
+	visibility: hidden;
+}
+
+.hintanchor{ 
+	padding-right: 8px;
+}
+
+.xprofile textarea {
+	width: 100%; height:90px; font-family:tahoma; font-size:11px; border:1px solid #9E9E9E;
+}
+.xprofile input {
+	width:250px; height:18px; font-family:tahoma; font-size:11px; border:1px solid #9E9E9E;
+}
+
+.bk {
+	background:#fff url(../images/shadow.png) repeat-x;
+}
+
+.tabs {
+	font: bold 11px/1.5em Tahoma;
+	float:right;
+	width:100%;
+	background:change-background;
+	line-height:normal;
+}
+.tabs ul {
+	margin:0;
+	padding:10px 10px 0 5px;
+	list-style:none;
+}
+.tabs li {
+	display:inline;
+	margin:0;
+	padding:0;
+}
+.tabs a {
+	float:right;
+	background:url("../images/tableft.gif") no-repeat left top;
+	margin:0;
+	padding:0 0 0 7px;
+	text-decoration:none;
+}
+.tabs a span {
+	float:right;
+	display:block;
+	background:url("../images/tabright.gif") no-repeat right top;
+	padding:5px 15px 4px 6px;
+	color:#6B78A9;
+}
+
+.tabs a span {float:none;}
+
+.tabs a:hover span,
+.tabs a.current span {
+	color:#6B78A9;
+}
+.tabs a:hover,
+.tabs a.current {
+	background-position:0% -42px;
+}
+
+.tabs a:hover span,
+.tabs a.current span {
+	background-position:100% -42px;
+}
+@media (max-width: 400px) {		
+	.tabs a span {		
+	    max-width: 90px;		
+	    height: 11px;		
+	    overflow: hidden;		
+	 } 		
+}
+.box {
+	height: 300px;
+	border:1px solid #B3B3B3;
+	-moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;
+	background:#fff url(../images/shadow.png) repeat-x;
+	overflow: auto;
+}
+
+.uploadedfile {
+	width: 115px;
+	height: 130px;
+	margin: 10px 5px 5px 5px;
+	border:1px solid #B3B3B3;
+	box-shadow: 0px 1px 4px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+	float: right;
+	text-align: center;
+	background:#ffffff;
+
+}
+
+.uploadimage {
+	margin-top: 5px;
+	width: 115px;
+	height: 90px;
+	display: table-cell;
+	text-align: center;
+	vertical-align:middle;
+}
+
+.info {
+	text-align: right;
+	white-space: nowrap;
+	margin: 0px 5px 0px 5px;
+	overflow: hidden;
+}
+
+.button {
+    padding:4px 10px 4px 10px;
+    margin-right:2px;
+    margin-top:5px;
+    font: bold 11px/1.5em Tahoma;color:#000000;
+    background:#F9F9F9 url('../images/button.png') repeat-x;
+	border:1px solid #CACACA;
+	cursor:pointer;
+}
+
+.properties {
+
+	float: right;
+    margin-top:8px;
+}
+
+.linkbox {
+    margin-top:5px;
+    padding:10px;
+	border:1px solid #B3B3B3;
+	-moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;
+	background:#fff url(../images/shadow.png) repeat-x;
+}
+
+
+#stmode {
+	padding:10px;
+}
+
+.file-box {
+	width: 95%;
+	border:1px solid #B3B3B3;
+	-moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;
+	background-color: #F5F5F5;
+	padding: 10px;
+	margin-top: 10px;
+}
+
+.qq-uploader { position:relative; width: 100%;}
+
+.qq-upload-button {
+    display:block; /* or inline-block */
+    width: 310px; 
+    padding:4px 10px 4px 10px;
+    margin-left:2px;
+    margin-top:5px;
+    font: bold 11px/1.5em Tahoma;color:#000000;
+    text-align: right !important;
+    direction: rtl !important;
+    background:#F9F9F9 url('../images/button.png') repeat-x;
+	border:1px solid #CACACA;
+	cursor:pointer;
+}
+.qq-upload-button-hover {outline:1px dotted black;}
+.qq-upload-button-focus {outline:1px dotted black;}
+
+.qq-upload-drop-area {
+    position:absolute; top:0; left:0; width:100%; height:100%; z-index:2;
+    background:#FF9797; text-align:center; 
+}
+.qq-upload-drop-area span {
+    display:block; position:absolute; top: 50%; width:100%; margin-top:-8px; font-size:16px;
+}
+.qq-upload-drop-area-active {background:#FF7171;}
+
+.qq-upload-list {margin:0; padding:0; list-style:disc;}
+.qq-upload-list li { margin:0; padding:2px;}
+.qq-upload-file, .qq-upload-spinner, .qq-upload-size, .qq-upload-cancel, .qq-upload-failed-text {
+    margin-right: 7px;
+}
+
+.qq-upload-file {}
+.qq-upload-spinner {display:none; background: url("../images/loading.gif"); width:15px; height:15px; vertical-align:text-bottom;}
+.qq-upload-size,.qq-upload-cancel {font-size:11px;}
+
+.qq-upload-failed-text {display:none;}
+.qq-upload-fail .qq-upload-failed-text {display:inline;}
+
+.progress {
+    overflow:hidden;
+    margin-top:10px;
+	margin-bottom:10px;
+    background-color:whitesmoke;
+    height:10px;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    -ms-border-radius:8px;
+    -o-border-radius:8px;
+    border-radius:8px;
+    background:#eee;
+    -webkit-box-shadow:0 1px 0 white, 0 0px 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 4px rgba(0, 0, 0, 0.2) inset;
+    box-shadow:0 1px 0 white, 0 0px 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 4px rgba(0, 0, 0, 0.2) inset;
+}
+ .progress .progress-bar {
+    float:left;
+    width:0%;
+    font-size:12px;
+    line-height:20px;
+    color:white;
+    text-align:center;
+    background-color:#428bca;
+    -webkit-box-shadow:inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    box-shadow:inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    -webkit-transition:width 0.6s ease;
+    transition:width 0.6s ease;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    -ms-border-radius:8px;
+    -o-border-radius:8px;
+    border-radius:8px;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+    height:8px;
+}
+.progress-bar span{
+    position:absolute;
+    width:1px;
+    height:1px;
+    margin:-1px;
+    padding:0;
+    overflow:hidden;
+    clip:rect(0 0 0 0);
+    border:0;
+}
+.progress-blue {
+    background-image:-webkit-gradient(linear, left 0%, left 100%, from(#9bcff5), to(#6db9f0));
+    background-image:-webkit-linear-gradient(top, #9bcff5, 0%, #6db9f0, 100%);
+    background-image:-moz-linear-gradient(top, #9bcff5 0%, #6db9f0 100%);
+    background-image:linear-gradient(to bottom, #9bcff5 0%, #6db9f0 100%);
+    background-repeat:repeat-x;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF9BCFF5', endColorstr='#FF6DB9F0', GradientType=0);
+    border:1px solid #55aeee;
+}
+
+.ltr { direction: ltr; }
+
+div.calendar { position: relative; }
+
+.calendar {
+  border: 1px solid #aaa;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 2px;
+  box-shadow: 0 5px 15px #ccc;
+}
+.calendar, .calendar table {
+  font-size: 11px;
+  color: #000;
+  cursor: default;
+  background: #eef;
+  font-family: tahoma;
+}
+
+/* Header part -- contains navigation buttons and day names. */
+
+.calendar .button { /* "<<", "<", ">", ">>" buttons have this class */
+  text-align: center;    /* They are the navigation buttons */
+  padding: 2px;          /* Make the buttons seem like they're pressing */
+  margin: 0px;
+  background: none;
+  border: none;
+  font-size: 11px;
+  font-weight: normal;
+}
+
+.calendar .nav {
+  background: #778;
+}
+
+.calendar thead .title { /* This holds the current "month, year" */
+  font-weight: bold;      /* Pressing it will take you to the current date */
+  text-align: center;
+  background: url('../images/button.png') repeat-x;
+  color: #000;
+  padding: 8px;
+}
+
+.calendar thead .headrow { /* Row <TR> containing navigation buttons */
+  background: #778;
+  color: #fff;
+}
+
+.calendar thead .daynames { /* Row <TR> containing the day names */
+  background: #bdf;
+}
+
+.calendar thead .name { /* Cells <TD> containing the day names */
+  border-bottom: 1px solid #888;
+  padding: 4px;
+  text-align: center;
+  color: #000;
+  text-shadow: 1px 1px 0 #aaaaff;
+}
+
+.calendar thead .weekend { /* How a weekend day name shows in header */
+  color: #f00;
+}
+
+.calendar thead .hilite { /* How do the buttons in header appear when hover */
+  background-color: #aaf;
+  color: #000;
+  border: 1px solid #04f;
+  padding: 1px;
+}
+
+.calendar thead .active { /* Active (pressed) buttons in header */
+  background-color: #77c;
+  padding: 2px 0px 0px 2px;
+}
+
+/* The body part -- contains all the days in month. */
+
+.calendar tbody .day { /* Cells <TD> containing month days dates */
+  width: 2em;
+  color: #456;
+  text-align: center;
+  padding: 2px 4px 2px 2px;
+}
+.calendar tbody .day.othermonth {
+  font-size: 80%;
+  color: #bbb;
+}
+.calendar tbody .day.othermonth.oweekend {
+  color: #fbb;
+}
+
+.calendar table .wn {
+  padding: 2px 3px 2px 2px;
+  border-right: 1px solid #fff;
+  background: #bdf;
+}
+
+.calendar tbody .rowhilite td {
+  background: #def;
+}
+
+.calendar tbody .rowhilite td.wn {
+  background: #eef;
+}
+
+.calendar tbody td.hilite { /* Hovered cells <TD> */
+  background: #def;
+  padding: 1px 3px 1px 1px;
+  border: 1px solid #bbb;
+}
+
+.calendar tbody td.active { /* Active (pressed) cells <TD> */
+  background: #cde;
+  padding: 2px 2px 0px 2px;
+}
+
+.calendar tbody td.selected { /* Cell showing today date */
+  font-weight: bold;
+  border: 1px solid #505050;
+  padding: 1px 3px 1px 1px;
+  background: #fff;
+  color: #000;
+}
+
+.calendar tbody td.weekend { /* Cells showing weekend days */
+  color: #f00;
+}
+
+.calendar tbody td.today { /* Cell showing selected date */
+  font-weight: bold;
+  color: #00f;
+}
+
+.calendar tbody .disabled { color: #999; }
+
+.calendar tbody .emptycell { /* Empty cells (the best is to hide them) */
+  visibility: hidden;
+}
+
+.calendar tbody .emptyrow { /* Empty row (some months need less than 6 rows) */
+  display: none;
+}
+
+/* The footer part -- status bar and "Close" button */
+
+.calendar tfoot .footrow { /* The <TR> in footer (only one right now) */
+  text-align: center;
+  background: #556;
+  color: #fff;
+}
+
+.calendar tfoot .ttip { /* Tooltip (status bar) cell <TD> */
+  background: #fff;
+  color: #445;
+  border-top: 1px solid #888;
+  padding: 8px;
+}
+
+.calendar tfoot .hilite { /* Hover style for buttons in footer */
+  background: #aaf;
+  border: 1px solid #04f;
+  color: #000;
+  padding: 1px;
+}
+
+.calendar tfoot .active { /* Active (pressed) style for buttons in footer */
+  background: #77c;
+  padding: 2px 0px 0px 2px;
+}
+
+/* Combo boxes (menus that display months/years for direct selection) */
+
+.calendar .combo {
+  position: absolute;
+  display: none;
+  top: 0px;
+  left: 0px;
+  width: 4em;
+  cursor: default;
+  border: 1px solid #655;
+  background: #def;
+  color: #000;
+  font-size: 90%;
+  z-index: 100;
+}
+
+.calendar .combo .label,
+.calendar .combo .label-IEfix {
+  text-align: center;
+  padding: 1px;
+}
+
+.calendar .combo .label-IEfix {
+  width: 4em;
+}
+
+.calendar .combo .hilite {
+  background: #acf;
+}
+
+.calendar .combo .active {
+  border-top: 1px solid #46a;
+  border-bottom: 1px solid #46a;
+  background: #eef;
+  font-weight: bold;
+}
+
+.calendar td.time {
+  border-top: 1px solid #888;
+  padding: 5px;
+  text-align: center;
+  background-color: #f4f0e8;
+}
+
+.calendar td.time .hour,
+.calendar td.time .minute,
+.calendar td.time .ampm {
+  padding: 0px 3px 0px 4px;
+  border: 1px solid #889;
+  font-weight: bold;
+  background-color: #fff;
+}
+
+.calendar td.time .ampm {
+  text-align: center;
+}
+
+.calendar td.time .colon {
+  padding: 0px 2px 0px 3px;
+  font-weight: bold;
+}
+
+.calendar td.time span.hilite {
+  border-color: #000;
+  background-color: #667;
+  color: #fff;
+}
+
+.calendar td.time span.active {
+  border-color: #f00;
+  background-color: #000;
+  color: #0f0;
+}
